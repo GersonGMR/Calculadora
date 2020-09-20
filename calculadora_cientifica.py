@@ -204,11 +204,9 @@ for j in range(2,5):
         boton[i]["command"] = lambda x = teclas_numericas [i]: valor_agregado.ingresando_numero(x)
         i += 1
 
-### Botones de las funciones ###
-
-boton_limpiar = Button(calc, text = "C", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
+boton_limpiar = Button(calc, text = "CE", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
                     command = valor_agregado.limpiar_entrada).grid(row = 1, column = 0, pady = 1)
-boton_limpiar_todo = Button(calc, text = "CE", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
+boton_limpiar_todo = Button(calc, text = "C", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
                     command = valor_agregado.limpiar_todo).grid(row = 1, column = 1, pady = 1)
 
 boton_raiz = Button(calc, text = "√", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
@@ -231,8 +229,6 @@ boton_punto_medio = Button(calc, text = chr(177), width = 6, height = 2, font = 
 boton_igual = Button(calc, text = "=", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
                     command = valor_agregado.valor_total).grid(row = 5, column = 3, pady = 1)
 
-### Calculadora cientifica fila 1 ###
-
 boton_pi = Button(calc, text = chr(960), width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
                    command = valor_agregado.pi).grid(row = 1, column = 4, pady = 1)
 boton_cos = Button(calc, text = "cos", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
@@ -241,8 +237,6 @@ boton_tan = Button(calc, text = "tan", width = 6, height = 2, font = ('Kozuka Mi
                    command = valor_agregado.tangente).grid(row = 1, column = 6, pady = 1)
 boton_sen = Button(calc, text = "sin", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
                    command = valor_agregado.seno).grid(row = 1, column = 7, pady = 1)
-
-### Calculadora cientifica fila 2 ###
 
 boton_2pi = Button(calc, text = "2π", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
                     command = valor_agregado.tau).grid(row = 2, column = 4, pady = 1)
@@ -253,8 +247,6 @@ boton_tanh = Button(calc, text = "tanh", width = 6, height = 2, font = ('Kozuka 
 boton_senh = Button(calc, text = "sinh", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
                     command = valor_agregado.seno_h).grid(row = 2, column = 7, pady = 1)
 
-### Calculadora cientifica fila 3 ###
-
 boton_log = Button(calc, text = "log", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
                    command = valor_agregado.log).grid(row = 3, column = 4, pady = 1)
 boton_exp = Button(calc, text = "Exp", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
@@ -264,8 +256,6 @@ boton_mod = Button(calc, text = "Mod", width = 6, height = 2, font = ('Kozuka Mi
 boton_e = Button(calc, text = "e", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
                    command = valor_agregado.e).grid(row = 3, column = 7, pady = 1)
 
-### Calculadora cientifica fila 4 ###
-
 boton_log2 = Button(calc, text = "log2", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
                     command = valor_agregado.log2).grid(row = 4, column = 4, pady = 1)
 boton_deg = Button(calc, text = "deg", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
@@ -274,8 +264,6 @@ boton_acosh = Button(calc, text = "acosh", width = 6, height = 2, font = ('Kozuk
                     command = valor_agregado.acosh).grid(row = 4, column = 6, pady = 1)
 boton_asinh = Button(calc, text = "asinh", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
                     command = valor_agregado.asinh).grid(row = 4, column = 7, pady = 1)
-
-### Calculadora cientifica fila 5 ###
 
 boton_log10 = Button(calc, text = "log10", width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bd = 4, bg = "grey",
                     command = valor_agregado.log10).grid(row = 5, column = 4, pady = 1)
@@ -288,8 +276,6 @@ boton_lgamma = Button(calc, text = "lgamma", width = 6, height = 2, font = ('Koz
 
 labelVista = Label(calc, text = "Calculadora cientifica", font = ("Kozuka Mincho Prn6N", 30, 'bold'), justify = CENTER)
 labelVista.grid(row = 0, column = 4, columnspan = 4)
-
-### Menu superior ####
 
 def Salida():
     Salida = tkinter.messagebox.askyesno("Calculadora cientifica","Confirma si quieres salir")
